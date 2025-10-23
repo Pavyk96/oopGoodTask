@@ -1,7 +1,8 @@
 package ru.oop.task1;
 
 /**
- * Car
+ * Обьект машины
+ * Машина может перемещать человека
  *
  * @author Daniil Mezev
  */
