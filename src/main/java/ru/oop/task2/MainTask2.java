@@ -29,5 +29,11 @@ public class MainTask2 {
      * @see Person
      * @see Position
      */
-    // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination, Vehicle vehicle) {
+        person.walk(vehicle.getPosition());
+        vehicle.moveTo(person, destination);
+        person.walk(destination);
+        assert person.getPosition() == destination;
+    }
+
 }
