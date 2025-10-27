@@ -28,8 +28,8 @@ public class MainTask3 {
      * @see Position
      */
     // TODO реализовать метод moveTo(...)
-    public void moveTo(Person person, Position destination, List<Vehicle> transports) {
-        transports.forEach(transport -> {
+    public void moveTo(Person person, Position destination, List<Vehicle> vehicles) {
+        vehicles.forEach(transport -> {
             person.walk(transport.getPosition());
             transport.moveTo(person, destination);
                 });

@@ -29,9 +29,9 @@ public class MainTask2 {
      * @see Person
      * @see Position
      */
-    public void moveTo(Person person, Position destination, Vehicle transport) {
-        person.walk(transport.getPosition());
-        transport.moveTo(person, destination);
+    public void moveTo(Person person, Position destination, Vehicle vehicle) {
+        person.walk(vehicle.getPosition());
+        vehicle.moveTo(person, destination);
         person.walk(destination);
         assert person.getPosition() == destination;
     }
